@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 423
+  Height = 512
+  Top = 250
+  Width = 662
+  Caption = 'Form1'
+  ClientHeight = 512
+  ClientWidth = 662
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object appconfig_display: TMemo
+    Left = 16
+    Height = 314
+    Top = 12
+    Width = 616
+    Color = clBlack
+    Font.Color = clLime
+    Font.Height = -19
+    Font.Name = 'System-ui'
+    ParentFont = False
+    TabOrder = 0
+  end
+  object appconfig_editor: TValueListEditor
+    Left = 512
+    Height = 268
+    Top = 168
+    Width = 200
+    FixedCols = 0
+    RowCount = 2
+    TabOrder = 1
+    Visible = False
+    Strings.Strings = (
+      'testvar=1234111'
+    )
+    ColWidths = (
+      64
+      134
+    )
+  end
+  object Edit1: TEdit
+    Left = 19
+    Height = 34
+    Top = 339
+    Width = 597
+    OnKeyDown = Edit1KeyDown
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 30
+    Height = 25
+    Top = 430
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 184
+    Height = 25
+    Top = 423
+    Width = 75
+    Caption = 'Button2'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+end
